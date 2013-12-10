@@ -1,0 +1,24 @@
+int N = 10;
+int i = 3;
+int j = 5;
+
+System.out.println(i +", " + j);
+System.out.println(i +", " + (N - j - 1));
+System.out.println((N - i - 1) +", " + j);
+System.out.println((N - i - 1) +", " + (N - j - 1));
+System.out.println(j +", " + i);
+System.out.println(j +", " + (N - i - 1));
+System.out.println((N - j - 1) +", " + i);
+System.out.println((N - j - 1) +", " + (N - i - 1));
+
+01234567890
+1  
+2
+3   QX
+4  Q  Q
+5  Q  Q
+6   QQ 
+7
+8
+9
+0
