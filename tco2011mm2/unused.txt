@@ -1,0 +1,503 @@
+//    private long[][][] linesMap;
+
+//    private static long[] copyOf(long[] original, int newLength) {
+//        long[] copy = new long[newLength];
+//        System.arraycopy(original, 0, copy, 0, original.length);
+//        return copy;
+//    }
+//
+//    private void add(int idx1, int idx2, long elem) {
+//        long[] la = linesMap[idx1][idx2];
+//        if (la[0] + 1 >= la.length) {
+//            la = copyOf(la, la.length * 2);
+//            linesMap[idx1][idx2] = la;
+//        }
+//        int idx = (int) la[0] + 1;
+//        la[0] = idx;
+//        la[idx] = elem;
+//    }
+
+
+    // private class Line implements Comparable<Line> {
+    // final int idx1;
+    // final int x1;
+    // final int y1;
+    // final int idx2;
+    // final int x2;
+    // final int y2;
+    // final int len;
+    //
+    // Line(int idx1, int x1, int y1, int idx2, int x2, int y2) {
+    // this.idx1 = idx1;
+    // this.idx2 = idx2;
+    // this.x1 = x1; // points[idx1*2];
+    // this.y1 = y1; // points[idx1*2+1];
+    // this.x2 = x2; // points[idx2*2];
+    // this.y2 = y2; // points[idx2*2+1];
+    // int l = dist2(x1, y1, x2, y2);
+    // if (l == 0)
+    // this.len = Integer.MAX_VALUE;
+    // else
+    // this.len = l;
+    // }
+    //
+    // public int compareTo(Line o) {
+    // return this.len - o.len;
+    // }
+    //
+    // }
+
+    
+            // List<Line> linesList = new ArrayList<Line>(numPoints*numPoints);
+        // Line dummy = new Line(-1, -1, -1, -1, -1, -1);
+
+        // linesMap = new long[10][][];
+        // for (int i = 0; i < 10; i++) {
+        // int frames = 1;
+        // switch (i) {
+        // case 0:
+        // case 1:
+        // case 2:
+        // frames = 8 * 8;
+        // break;
+        // case 3:
+        // case 4:
+        // case 5:
+        // frames = 4 * 4;
+        // break;
+        // case 6:
+        // case 7:
+        // frames = 2 * 2;
+        // break;
+        // }
+        // linesMap[i] = new long[frames][1000];
+        // // for (int j = 0; j < frames; j++)
+        // // linesMap[i][j] = new FastLongArray();
+        // if (frames > 1)
+        // frames = (int) Math.sqrt(frames);
+        // }
+
+        // minLen = Integer.MAX_VALUE;
+
+
+                // Line line = new Line(i/2, x1, y1, j/2, points[j],
+                // points[j+1]);
+                // // //linesList.add(line);
+                // lines2[i/2][j/2] = line;
+                // lines2[j/2][i/2] = line;
+                // int len = line.len;
+
+
+                // int idxLen = (int) (Math.sqrt(len) / 100);
+                // int idxField = 0;
+                // switch (idxLen) {
+                // case 0:
+                // case 1:
+                // case 2:
+                // idxField = x1 / (700 / 8) + (y1 / ((700 / 8) + 1)) * 8;
+                // break;
+                // case 3:
+                // case 4:
+                // case 5:
+                // idxField = x1 / (700 / 4) + (y1 / (700 / 4)) * 4;
+                // break;
+                // case 6:
+                // case 7:
+                // idxField = x1 / 350 + (y1 / 350) * 2;
+                // break;
+                // }
+                // if (idxField > linesMap[idxLen].length) {
+                // print("error");
+                // }
+                // add(idxLen, idxField, lenVal);
+                // Integer intVal = Integer.valueOf(len);
+                // lines3[i/2][j/2] = intVal;
+                // lines3[j/2][i/2] = intVal;
+                // if (len < minLen) {
+                // minLen = len;
+                // minLenFrom = i;
+                // minLenTo = j;
+                // }
+
+
+        // int curLen = minLen;
+        // int[][] adj = new int[numPoints][numPoints];
+        // for (int i=0; i<numPoints-1; i++) {
+        // int idx = 0;
+        // for (int j=i+1; j<numPoints; j++) {
+        // int len = lines[i][j];
+        // if (len < curLen || (100*100 * curLen < len * lenDiff))
+        // continue;
+        // adj[i][idx++] = len;
+        // }
+        // adj[i] = Arrays.copyOf(adj[i], idx);
+        // }
+        // System.out.println("Time2: " + (System.currentTimeMillis() - time));
+        //
+        // boolean[] blocked = new boolean[numPoints];
+        // List[] B = new ArrayList[numPoints];
+        // List stack = new ArrayList();
+
+        // for (int i=0; i<numPoints; i++) {
+        // print("i=" + i);
+        // if (!pUsed[i]) {
+        // pUsed[i] = true;
+        // poly = new ArrayList<Integer>();
+        // startingPoint = i;
+        // poly.add(i);
+        // if (!findVert(i, -1, -1)) {
+        // pUsed[i] = false;
+        // } else {
+        // print(poly);
+        // }
+        // }
+        // }
+
+        //
+        // for (int i=0; i<numPoints; i++) {
+        // pUsed[i] = true;
+        // poly.add(i);
+        // for (int j=i+1; j<numPoints; j++) {
+        // poly.add(j);
+        // pUsed[j] = true;
+        // int minLen = lines[i][j];
+        // int maxLen = minLen;
+        // findVert(j, minLen, maxLen);
+        // poly.remove(1);
+        // pUsed[j] = false;
+        // }
+        // poly.clear();
+        // pUsed[i] = false;
+        // }
+
+    private void findPoly2(boolean triangles) {
+        steps: for (int len = 0; len < 10; len++) {
+            for (int field = 0; field < linesMap[len].length; field++) {
+                if (System.currentTimeMillis() - time > TIME_OFFSET) {
+                    print("time break");
+                    break steps;
+                }
+                long[] curPoints = linesMap[len][field];
+                int numLines = (int) curPoints[0];
+                print("step " + len + " " + field + " = " + numLines);
+                main: for (int ii = 0; ii < numLines - 1; ii++) {
+                    long line = curPoints[ii + 1];
+                    int i = (int) (line & 0xFFFF);
+                    int j = (int) ((line >>> 16) & 0xFFFF);
+                    int lineLen = (int) (line >>> 32);
+                    if (pUsed[i] || pUsed[j])
+                        continue;
+                    for (int kk = ii + 1; kk < numLines; kk++) {
+                        long line2 = curPoints[kk + 1];
+                        int k1 = (int) (line2 & 0xFFFF);
+                        int k2 = (int) ((line2 >>> 16) & 0xFFFF);
+                        int lineLen2 = (int) (line2 >>> 32);
+                        if (pUsed[k1] || pUsed[k2])
+                            continue;
+                        int lineLen3;
+                        int k;
+                        if (k1 == i) {
+                            lineLen3 = lines[j][k2];
+                            k = k2;
+                        } else if (k2 == i) {
+                            lineLen3 = lines[j][k1];
+                            k = k1;
+                        } else if (k1 == j) {
+                            lineLen3 = lines[i][k2];
+                            k = k2;
+                        } else if (k2 == j) {
+                            lineLen3 = lines[i][k1];
+                            k = k1;
+                        } else {
+                            continue;
+                        }
+                        long minLen = Math.min(Math.min(lineLen, lineLen2), lineLen3);
+                        long maxLen = Math.max(Math.max(lineLen, lineLen2), lineLen3);
+                        if (100 * 100 * minLen < maxLen * lenDiff)
+                            continue;
+
+                        // poly = new ArrayList<Integer>();
+                        // poly.add(i);
+                        // poly.add(j);
+                        // poly.add(k);
+                        if (!validate(3))
+                            continue;
+                        found(3);
+                        continue main;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+            // lines[i / 2][i / 2] = Integer.MAX_VALUE;
+            // lines2[i/2][i/2] = new Line(i/2, x1, y1, i/2, x1, y1);
+    
+    
+        // private boolean findVert(int start, int minLen, int maxLen) {
+    // // print("findVert " + start + ", poly=" + poly.size());
+    // for (int i = 0; i < numPoints; i++) {
+    // if (i == startingPoint) {
+    // if (poly.size() < 3)
+    // continue;
+    // } else {
+    // if (pUsed[i])
+    // continue;
+    // }
+    // int len = lines[start][i];
+    // int newMinLen, newMaxLen;
+    // if (minLen == -1) {
+    // newMinLen = len;
+    // newMaxLen = len;
+    // } else {
+    // newMinLen = len < minLen ? len : minLen;
+    // newMaxLen = len > maxLen ? len : maxLen;
+    // if (100 * 100 * newMinLen < newMaxLen * lenDiff)
+    // continue;
+    // if (i == startingPoint) {
+    // if (checkInscribed())
+    // return true;
+    // else
+    // continue;
+    // }
+    // }
+    // pUsed[i] = true;
+    // poly.add(i);
+    // if (findVert(i, newMinLen, newMaxLen))
+    // return true;
+    // poly.remove(poly.size() - 1);
+    // pUsed[i] = false;
+    // }
+    // return false;
+    // }
+
+    // private void findVert(int start, int minLen, int maxLen) {
+    // for (int i=0; i<numPoints; i++) {
+    // if (i == start)
+    // continue;
+    // int len = lines[start][i];
+    // if (i == poly.get(0)) {
+    // if (poly.size() < 3)
+    // continue;
+    // } else {
+    // if (pUsed[i])
+    // continue;
+    // }
+    // }
+    // }
+    
+    
+    private void findPoly(boolean triangles) {
+        main: for (int i = 0; i < numPoints - 1; i++) {
+            if (pUsed[i])
+                continue;
+            if (System.currentTimeMillis() - time > TIME_OFFSET) {
+                print("time break");
+                break;
+            }
+            for (int j = i + 1; j < numPoints; j++) {
+                if (pUsed[j])
+                    continue;
+                int curLen = lines[i][j];
+                for (int k = 0; k < numPoints; k++) {
+                    if (k == i || k == j || pUsed[k])
+                        continue;
+                    int len = lines[j][k];
+                    long minLen = curLen < len ? curLen : len;
+                    long maxLen = curLen >= len ? curLen : len;
+                    if (100 * 100 * minLen < maxLen * lenDiff)
+                        continue;
+
+                    if (!triangles) {
+                        for (int l = 0; l < numPoints; l++) {
+                            if (l == i || l == j || l == k || pUsed[l])
+                                continue;
+                            int len2 = lines[k][l];
+                            minLen = minLen < len2 ? minLen : len2;
+                            maxLen = maxLen >= len2 ? maxLen : len2;
+                            if (100 * 100 * minLen < maxLen * lenDiff)
+                                continue;
+                            len2 = lines[l][i];
+                            minLen = minLen < len2 ? minLen : len2;
+                            maxLen = maxLen >= len2 ? maxLen : len2;
+                            if (100 * 100 * minLen < maxLen * lenDiff)
+                                continue;
+                            N = 4;
+                            poly[0] = i;
+                            poly[1] = j;
+                            poly[2] = k;
+                            poly[3] = l;
+                            if (!validate())
+                                continue;
+                            found();
+                            continue main;
+                        }
+                        continue;
+                    }
+
+                    int len2 = lines[i][k];
+                    minLen = minLen < len2 ? minLen : len2;
+                    maxLen = maxLen >= len2 ? maxLen : len2;
+                    if (100 * 100 * minLen < maxLen * lenDiff)
+                        continue;
+                    N = 3;
+                    poly[0] = i;
+                    poly[1] = j;
+                    poly[2] = k;
+                    if (!validate())
+                        continue;
+                    found();
+                    continue main;
+                }
+            }
+        }
+    }
+    
+
+    
+        // private boolean findEdge(long minLen, long maxLen) {
+    // for (int i=0; i<numPoints; i++) {
+    // if (pUsed[i])
+    // continue;
+    // for (int p=0; p<N; p++)
+    // if (i==poly[p])
+    // continue;
+    // long len1 = lines[poly[N-1]][i];
+    // long len2 = lines[poly[N-2]][i];
+    // long newminLen = Math.min(minLen, Math.min(len1, len2));
+    // long newmaxLen = Math.max(maxLen, Math.max(len1, len2));
+    // if (100 * 100 * newminLen < newmaxLen * lenDiff)
+    // continue;
+    // int last=poly[N-1];
+    // poly[N-1] = i;
+    // poly[N] = last;
+    // N++;
+    // if (validate()) {
+    // found();
+    // return true;
+    // }
+    // N--;
+    // }
+    // return false;
+    // }
+
+    
+    
+    private boolean checkLen() {
+        // edges must have approximately equal length
+        int idx0 = poly[0] * 2;
+        int idxl = poly[N - 1] * 2;
+        long maxLen2 = dist2(points[idx0], points[idx0 + 1], points[idxl], points[idxl + 1]);
+        long minLen2 = maxLen2, len2;
+        double maxLen, minLen;
+        int x1 = points[poly[0] * 2];
+        int x2 = points[poly[1] * 2];
+        int x3 = points[poly[2] * 2];
+        int x4 = points[poly[3] * 2];
+        int y1 = points[poly[0] * 2 + 1];
+        int y2 = points[poly[1] * 2 + 1];
+        int y3 = points[poly[2] * 2 + 1];
+        int y4 = points[poly[3] * 2 + 1];
+        int l1 = lines[poly[0]][poly[1]];
+        int l2 = lines[poly[1]][poly[2]];
+        int l3 = lines[poly[2]][poly[3]];
+        int l4 = lines[poly[3]][poly[0]];
+        for (int i = 0; i < N - 1; i++) {
+            int xx1 = points[poly[i] * 2];
+            int xx2 = points[poly[i + 1] * 2];
+            int yy1 = points[poly[i] * 2 + 1];
+            int yy2 = points[poly[i + 1] * 2 + 1];
+            len2 = dist2(xx1, yy1, xx2, yy2);
+            maxLen2 = Math.max(maxLen2, len2);
+            minLen2 = Math.min(minLen2, len2);
+        }
+        if (100 * 100 * minLen2 < maxLen2 * lenDiff) {
+            maxLen = Math.sqrt(maxLen2);
+            minLen = Math.sqrt(minLen2);
+            print("X");
+            return false;
+        }
+        return true;
+    }
+
+    
+    
+    private boolean findEdge2(long minLen, long maxLen, int edges) {
+        long minMinLen = maxLen * lenDiff;
+        long maxMaxLen = 100*100*minLen/lenDiff;
+
+        
+        int p0 = poly[0];
+        int p1 = poly[1];
+        int p2 = poly[2];
+        
+        int v1x = vecx[p1*numPoints + p0]; 
+        int v1y = vecy[p1*numPoints + p0];
+        int v2x = vecx[p1*numPoints + p2]; 
+        int v2y = vecy[p1*numPoints + p2];
+        int v3x = v1x + v2x;
+        int v3y = v1y + v2y;
+        
+        int p3x = points[p1*2] + v3x;
+        int p3y = points[p1*2+1] + v3y;
+        
+        int dx = (int) Math.sqrt(Math.abs(maxMaxLen * (sidesDiff / 100.0)));
+        int dy = (int) Math.sqrt(Math.abs(maxMaxLen * (sidesDiff / 100.0)));
+        
+        int min3x = Math.max(p3x - dx, 0);
+        int max3x = Math.min(p3x + dx, MAX_WIDTH);
+        int min3y = Math.max(p3y - dy, 0);
+        int max3y = Math.min(p3y + dy, MAX_HEIGHT);
+        
+        int tocheck = (max3x - min3x) * (max3y - min3y);
+        //print("" + p0 + " " + p1 + " " + p2 + "=" + tocheck + ", " + min3x + "-" + max3x);
+        
+        loop: for (int y=min3y; y<max3y; y++) {
+            for (int x=min3x; x<max3x; x++) {
+                int newPoint = table[y*MAX_WIDTH + x];
+                if (newPoint==-1 || pUsed[newPoint])
+                    continue;
+                long len1 = lines[p2*numPoints + newPoint];
+                if (100 * 100 * len1 < minMinLen)
+                    continue;
+                if (maxMaxLen < len1)
+                    continue;
+                for (int p = 0; p < N; p++)
+                    if (newPoint == poly[p])
+                        continue loop;
+                poly[N++] = newPoint;
+                long oldX = sumX;
+                sumX += x;
+                long oldY = sumY;
+                sumY += y;
+
+
+                long newminLen, newmaxLen;
+                if (len1 < minLen) {
+                    newminLen = len1;
+                    newmaxLen = maxLen;
+                } else if (len1 > maxLen) {
+                    newminLen = minLen;
+                    newmaxLen = len1;
+                } else {
+                    newminLen = minLen;
+                    newmaxLen = maxLen;
+                }
+                
+                if (isValid(newminLen, newmaxLen)) {
+                    found();
+                    return true;
+                }
+                
+                sumX = oldX;
+                sumY = oldY;
+                N--;
+            }
+        }
+        
+        return false;
+    }
+    

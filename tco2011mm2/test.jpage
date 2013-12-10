@@ -1,0 +1,338 @@
+1.  NP = 50, sidesDiff = 20, radiiDiff = 20
+2.  NP = 440, sidesDiff = 4, radiiDiff = 6
+3.  NP = 2395, sidesDiff = 5, radiiDiff = 10
+4.  NP = 3646, sidesDiff = 14, radiiDiff = 5
+5.  NP = 377, sidesDiff = 8, radiiDiff = 3
+6.  NP = 2773, sidesDiff = 3, radiiDiff = 14
+7.  NP = 382, sidesDiff = 4, radiiDiff = 17
+8.  NP = 254, sidesDiff = 16, radiiDiff = 3
+9.  NP = 1117, sidesDiff = 11, radiiDiff = 11
+10. NP = 90, sidesDiff = 20, radiiDiff = 14
+11. NP = 1411, sidesDiff = 13, radiiDiff = 2
+13. NP = 1282, sidesDiff = 12, radiiDiff = 4
+16. NP = 4454, sidesDiff = 17, radiiDiff = 5
+24. NP = 459, sidesDiff = 8, radiiDiff = 1
+27. NP = 200, sidesDiff = 20, radiiDiff = 15
+159193
+159366
+
+-- 1	found 15	Time: 6		Score = 135.0
+-- 2	found 131	Time: 79	Score = 1179.0
+-- 3	found 783	Time: 706	Score = 7047.0
+-- 4	found 1190	Time: 1891	Score = 10710.0
+-- 5	found 107	Time: 46	Score = 963.0
+-- 6	found 902	Time: 1017	Score = 8118.0
+-- 7	found 107	Time: 73	Score = 963.0
+-- 8	found 73	Time: 21	Score = 657.0
+-- 9	found 365	Time: 59	Score = 3285.0
+-- 10	found 25	Time: 2		Score = 225.0
+totalScore=33282
+
+
+-- 1	found 13	Time: 65	Score = 138.0
+-- 2	found 131	Time: 54	Score = 1179.0
+-- 3	found 783	Time: 604	Score = 7047.0
+-- 4	found 1190	Time: 1841	Score = 10710.0
+-- 5	found 107	Time: 46	Score = 963.0
+-- 6	found 902	Time: 1637	Score = 8118.0
+-- 7	found 107	Time: 71	Score = 963.0
+-- 8	found 73	Time: 21	Score = 657.0
+-- 9	found 365	Time: 59	Score = 3285.0
+-- 10	found 25	Time: 398	Score = 260.0
+totalScore=33320
+
+
+-- 1	found 15	Time: 4		Score = 135.0
+-- 2	found 135	Time: 70	Score = 1215.0
+-- 3	found 788	Time: 1693	Score = 7092.0
+-- 4	found 1197	Time: 4142	Score = 10773.0
+-- 5	found 108	Time: 33	Score = 972.0
+-- 6	found 908	Time: 2334	Score = 8172.0
+-- 7	found 112	Time: 31	Score = 1008.0
+-- 8	found 71	Time: 17	Score = 639.0
+-- 9	found 367	Time: 291	Score = 3303.0
+-- 10	found 27	Time: 2		Score = 243.0
+totalScore=33552
+
+
+-- 1	found 13	Time: 15	Score = 159.0
+-- 2	found 135	Time: 62	Score = 1215.0
+-- 3	found 788	Time: 1670	Score = 7092.0
+-- 4	found 1197	Time: 4447	Score = 10773.0
+-- 5	found 108	Time: 63	Score = 972.0
+-- 6	found 908	Time: 2247	Score = 8172.0
+-- 7	found 112	Time: 47	Score = 1008.0
+-- 8	found 64	Time: 8907	Score = 758.0
+-- 9	found 367	Time: 312	Score = 3303.0
+-- 10	found 24	Time: 156	Score = 286.0
+totalScore=33738
+
+
+-- 1	found 13	Time: 14	Score = 152.0
+-- 2	found 116	Time: 2510	Score = 1422.0
+-- 3	found 788	Time: 1698	Score = 7092.0
+-- 4	found 1197	Time: 4250	Score = 10773.0
+-- 5	found 91	Time: 2225	Score = 1155.0
+-- 6	found 908	Time: 2367	Score = 8172.0
+-- 7	found 89	Time: 1961	Score = 1095.0
+-- 8	found 62	Time: 1464	Score = 768.0
+-- 9	found 276	Time: 2292	Score = 4318.0
+-- 10	found 21	Time: 28	Score = 266.0
+totalScore=35213
+
+SUBMIT2
+-- 1	found 12	Time: 171	Score = 168.0
+-- 2	found 116	Time: 1981	Score = 1422.0
+-- 3	found 788	Time: 1701	Score = 7092.0
+-- 4	found 1197	Time: 4229	Score = 10773.0
+-- 5	found 91	Time: 1825	Score = 1155.0
+-- 6	found 908	Time: 2356	Score = 8172.0
+-- 7	found 89	Time: 1576	Score = 1095.0
+-- 8	found 62	Time: 1249	Score = 768.0
+-- 9	found 276	Time: 1872	Score = 4318.0
+-- 10	found 22	Time: 3776	Score = 288.0
+totalScore=35251
+
+-- 1	found 12	Time: 110	Score = 168.0
+-- 2	found 116	Time: 1997	Score = 1422.0
+-- 3	found 690	Time: 9408	Score = 8296.0
+-- 4	found 1191	Time: 9487	Score = 10803.0
+-- 5	found 91	Time: 2246	Score = 1155.0
+-- 6	found 861	Time: 9428	Score = 8841.0
+-- 7	found 89	Time: 1710	Score = 1095.0
+-- 8	found 62	Time: 1393	Score = 768.0
+-- 9	found 276	Time: 2079	Score = 4318.0
+-- 10	found 22	Time: 1867	Score = 288.0
+totalScore=37154
+
+
+-- 1	found 12	Time: 102	Score = 168.0
+-- 2	found 116	Time: 1983	Score = 1422.0
+-- 3	found 686	Time: 9412	Score = 8281.0
+-- 4	found 1191	Time: 9481	Score = 10803.0
+-- 5	found 91	Time: 1829	Score = 1155.0
+-- 6	found 847	Time: 9424	Score = 8897.0
+-- 7	found 89	Time: 1853	Score = 1095.0
+-- 8	found 62	Time: 1267	Score = 768.0
+-- 9	found 276	Time: 1938	Score = 4318.0
+-- 10	found 22	Time: 1515	Score = 288.0
+totalScore=37195
+
+
+SUBMIT 3
+-- 1	found 12	Time: 204	Score = 168.0
+-- 2	found 118	Time: 9459	Score = 1442.0
+-- 3	found 690	Time: 9612	Score = 8275.0
+-- 4	found 1191	Time: 9703	Score = 10803.0
+-- 5	found 91	Time: 9309	Score = 1155.0
+-- 6	found 851	Time: 9621	Score = 8919.0
+-- 7	found 85	Time: 8984	Score = 1102.0
+-- 8	found 63	Time: 8727	Score = 797.0
+-- 9	found 266	Time: 9347	Score = 4482.0
+-- 10	found 22	Time: 3648	Score = 288.0
+totalScore=37431
+
+
+-- 1	found 12	Time: 328	Score = 168.0
+-- 2	found 114	Time: 9704	Score = 1427.0
+-- 3	found 685	Time: 9704	Score = 8377.0
+-- 4	found 1191	Time: 9767	Score = 10803.0
+-- 5	found 93	Time: 9704	Score = 1194.0
+-- 6	found 847	Time: 9706	Score = 8981.0
+-- 7	found 88	Time: 9642	Score = 1108.0
+-- 8	found 62	Time: 9424	Score = 781.0
+-- 9	found 262	Time: 9267	Score = 4478.0
+-- 10	found 22	Time: 5588	Score = 288.0
+totalScore=37605
+
+
+-- 1	found 12	Time: 239	Score = 168.0
+-- 2	found 109	Time: 8371	Score = 1391.0
+-- 3	found 576	Time: 9706	Score = 9679.0
+-- 4	found 1191	Time: 9775	Score = 10803.0
+-- 5	found 89	Time: 8716	Score = 1151.0
+-- 6	found 694	Time: 8995	Score = 10565.0
+-- 7	found 83	Time: 8000	Score = 1117.0
+-- 8	found 63	Time: 8611	Score = 783.0
+-- 9	found 252	Time: 8058	Score = 4846.0
+-- 10	found 22	Time: 3840	Score = 288.0
+totalScore=40791
+
+SUBMIT 4
+-- 1	found 12	Time: 235	Score = 168.0
+-- 2	found 112	Time: 8601	Score = 1409.0
+-- 3	found 574	Time: 9705	Score = 9683.0
+-- 4	found 1195	Time: 9775	Score = 10839.0
+-- 5	found 88	Time: 8735	Score = 1163.0
+-- 6	found 698	Time: 8286	Score = 10622.0
+-- 7	found 80	Time: 8369	Score = 1088.0
+-- 8	found 62	Time: 8626	Score = 774.0
+-- 9	found 255	Time: 7911	Score = 4878.0
+-- 10	found 22	Time: 3768	Score = 288.0
+totalScore=40912
+
+
+SUBMIT 5
+-- 1	found 12	Time: 263	Score = 168.0
+-- 2	found 113	Time: 8761	Score = 1420.0
+-- 3	found 572	Time: 9713	Score = 9652.0
+-- 4	found 1102	Time: 9821	Score = 11924.0
+-- 5	found 92	Time: 8731	Score = 1192.0
+-- 6	found 717	Time: 9725	Score = 10562.0
+-- 7	found 82	Time: 8447	Score = 1108.0
+-- 8	found 63	Time: 8565	Score = 790.0
+-- 9	found 253	Time: 7926	Score = 4876.0
+-- 10	found 22	Time: 3576	Score = 288.0
+totalScore=41980
+
+
+-- 1	found 12	Time: 265	Score = 168.0
+-- 2	found 114	Time: 8684	Score = 1429.0
+-- 3	found 572	Time: 9363	Score = 9724.0
+-- 4	found 1099	Time: 9814	Score = 12027.0
+-- 5	found 92	Time: 8738	Score = 1192.0
+-- 6	found 717	Time: 9722	Score = 10647.0
+-- 7	found 83	Time: 8406	Score = 1131.0
+-- 8	found 63	Time: 8569	Score = 790.0
+-- 9	found 250	Time: 7885	Score = 4828.0
+-- 10	found 22	Time: 3702	Score = 288.0
+totalScore=42224
+
+SUBMIT6
+-- 1	found 12	Time: 307	Score = 168.0
+-- 2	found 112	Time: 8502	Score = 1409.0
+-- 3	found 577	Time: 9712	Score = 9683.0
+-- 4	found 972	Time: 9788	Score = 13361.0
+-- 5	found 93	Time: 8532	Score = 1187.0
+-- 6	found 698	Time: 8262	Score = 10622.0
+-- 7	found 81	Time: 8143	Score = 1065.0
+-- 8	found 63	Time: 8201	Score = 790.0
+-- 9	found 249	Time: 7847	Score = 4803.0
+-- 10	found 22	Time: 4078	Score = 288.0
+totalScore=43376
+
+SUBMIT7
+-- 1	found 12	Time: 277	Score = 168.0
+-- 2	found 113	Time: 9067	Score = 1418.0
+-- 3	found 563	Time: 9719	Score = 9900.0
+-- 4	found 904	Time: 9471	Score = 14100.0
+-- 5	found 92	Time: 9018	Score = 1192.0
+-- 6	found 725	Time: 9729	Score = 10568.0
+-- 7	found 82	Time: 8668	Score = 1076.0
+-- 8	found 60	Time: 9045	Score = 752.0
+-- 9	found 251	Time: 8578	Score = 4841.0
+-- 10	found 22	Time: 3073	Score = 288.0
+totalScore=44303
+
+
+// zmiana czasów
+-- 1	found 12	Time: 266	Score = 168.0
+-- 2	found 123	Time: 9710	Score = 1338.0
+-- 3	found 661	Time: 9724	Score = 8924.0
+-- 4	found 904	Time: 9273	Score = 14100.0
+-- 5	found 108	Time: 9735	Score = 1042.0
+-- 6	found 815	Time: 9744	Score = 9631.0
+-- 7	found 85	Time: 9328	Score = 1132.0
+-- 8	found 69	Time: 9733	Score = 688.0
+-- 9	found 295	Time: 9788	Score = 4390.0
+-- 10	found 22	Time: 2939	Score = 288.0
+totalScore=41701
+
+-- 1	found 12	Time: 295	Score = 168.0
+-- 2	found 122	Time: 9718	Score = 1322.0
+-- 3	found 664	Time: 9723	Score = 8855.0
+-- 4	found 904	Time: 9741	Score = 14100.0
+-- 5	found 108	Time: 9738	Score = 1042.0
+-- 6	found 824	Time: 9756	Score = 9547.0
+-- 7	found 85	Time: 9519	Score = 1132.0
+-- 8	found 69	Time: 9739	Score = 688.0
+-- 9	found 296	Time: 9730	Score = 4399.0
+-- 10	found 22	Time: 3104	Score = 288.0
+totalScore=41541
+
+
+
+-- 6	
+NP = 2773, sidesDiff = 3, radiiDiff = 14
+Time1: 1935
+time break 2@162-336
+time break 1@589-1144
+time break 1@594-596
+found 736	Time: 9741	Score = 10478.0
+totalScore=10478
+
+
+
+Math.c(Math.PI * 90.0 / 180.0)(double) 1.0
+
+
+
+
+100*100*minLen<len1*lenDiff
+100*100*minLen/lenDiff<len1
+
+
+
+
+700*700 + 700*700
+(int) 980000
+
+Integer.toBinaryString(980000)
+(java.lang.String) 11101111010000100000
+20 bit
+Integer.toBinaryString(5000)
+(java.lang.String) 1001110001000
+13 bit
+1 << 13(int) 8192(int) 0
+Integer.toHexString(8191)(java.lang.String) 1fff
+
+Math.sqrt(980000)
+(double) 989.9494936611666
+
+
+(8191 & 0x1fff) | ((980000 >>> 2) << 13)(int) 2007048191
+Integer.toBinaryString(2007048191)(java.lang.String) 1110111101000010001111111111111
+(java.lang.String) 
+11101111010000100|1111111111111
+980000 >> 2(int) 245000
+Integer.toBinaryString((980000 >> 2) << 13)
+(java.lang.String) 1110111101000010000000000000000
+(java.lang.String) 111011110100001000 
+
+1 2 4 8 16 32 64 128 256 512 1024 2048 4096
+1 2 3 4 5  6  7  8   9   10  11   12   13
+
+
+
+16 << 2(int) 64
+
+700/16
+
+700/8(int) 87
+
+ 012345
+0X
+1 X
+2  X
+3   X
+4    X
+5     X
+
+
+     i           j
+     1-----------0
+    |
+   |
+  |     
+  2             3
+ k               
+                5
+        4        
+
+
+
+        
+10+20+30+40 - 10*4(int) 60      
+(10+20+30+40)/4 - 10(int) 15
+
+(Math.sqrt(2.0)) / 2.0(double) 0.7071067811865476
