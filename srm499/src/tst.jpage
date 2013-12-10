@@ -1,0 +1,12 @@
+String s= "abba";
+int len = s.length();
+int mid = (len+1) / 2;
+for (int i=0; i<=mid; i++) {
+	if (s.charAt(i) != s.charAt(len-i-1)) {
+		return false;
+	}
+}
+return true;
+
+
+5+7+2+1+6+4
